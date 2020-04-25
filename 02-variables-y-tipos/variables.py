@@ -7,6 +7,19 @@ muchas variables y que cada una tenga un dato distinto.
 """
 
 texto = "Máster en Python"
-texto = 1
+texto2 = "con Víctor Robles"
+numero = 45
+decimal = 6.7
 
 print(texto)
+print(texto2)
+print(numero)
+print(decimal)
+
+print("---------------------------------------------------------")
+
+numero = 77
+decimal = 8.9
+
+print(numero)
+print(decimal)
