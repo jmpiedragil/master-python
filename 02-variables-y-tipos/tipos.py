@@ -31,4 +31,4 @@ numerito = int(776)
 print(type(numerito))
 
 numerito = float(776)
-print(type(numerito))
+print(numerito)
