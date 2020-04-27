@@ -7,9 +7,14 @@ booleano = False
 lista = [10, 20, 30, 100, 200]
 listaString = [44, "treinta", 30, "cuarenta"]
 tuplaNocambia = ("máster", "en", "python")
+diccionario = {
+  "nombre": "Víctor",
+  "apellido": "Robles",
+  "curso": "Máster en Python"
+}
 
 # Imprimir variable
-print(tuplaNocambia)
+print(diccionario)
 
 # Mostrar tipo de dato
-print(type(tuplaNocambia))
+print(type(diccionario))
