@@ -4,9 +4,10 @@ cadena = "Desarrollador web"
 entero = 99
 flotante = 4.2
 booleano = False
+lista = [10, 20, 30, 100, 200]
 
 # Imprimir variable
-print(booleano)
+print(lista)
 
 # Mostrar tipo de dato
-print(type(booleano))
+print(type(lista))
