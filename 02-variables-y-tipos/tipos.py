@@ -13,9 +13,10 @@ diccionario = {
   "curso": "Máster en Python"
 }
 rango = range(9)
+dato_byte = b"Probando"
 
 # Imprimir variable
-print(rango)
+print(dato_byte)
 
 # Mostrar tipo de dato
-print(type(rango))
+print(type(dato_byte))
