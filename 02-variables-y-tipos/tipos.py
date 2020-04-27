@@ -3,9 +3,10 @@ cadena = "Hola soy Víctor Robles WEB"
 cadena = "Desarrollador web"
 entero = 99
 flotante = 4.2
+booleano = False
 
 # Imprimir variable
-print(flotante)
+print(booleano)
 
 # Mostrar tipo de dato
-print(type(flotante))
+print(type(booleano))
