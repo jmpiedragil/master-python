@@ -51,8 +51,8 @@ print("\n########## EJEMPLO 3 ##########")
 
 nombre = "Javier Piedragil"
 ciudad = "Barcelona"
-continente = "Europa"
-edad = 17
+continente = "Oceanía"
+edad = 18
 mayoria_edad = 18
 
 if edad >= mayoria_edad:
