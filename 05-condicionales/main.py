@@ -17,10 +17,10 @@ else:
 
 print("########## EJEMPLO 1 ##########")
 
-color = "verde"
+color = input("Adivina cuál es mi color favorito: ")
 
 if color == "rojo":
   print("¡¡Enhorabuena!!")
   print("El color es ROJO")
 else:
-  print("El color NO es ROJO")
+  print("¡¡Color incorrecto!!")
