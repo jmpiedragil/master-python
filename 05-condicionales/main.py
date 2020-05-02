@@ -11,6 +11,15 @@ if condicion:
 else:
   otras instrucciones
 
+# Operadores de comparación
+
+== igual
+!= diferente
+< menor que
+> mayor que
+<= menor o igual que
+>= mayor o igual que
+
 """
 
 # Ejemplo 1
@@ -24,3 +33,14 @@ if color == "rojo":
   print("El color es ROJO")
 else:
   print("¡¡Color incorrecto!!")
+
+# Ejemplo 2
+
+print("\n########## EJEMPLO 2 ##########")
+
+year = 2020
+
+if year >= 2021:
+  print("Estamos de 2021 en adelante")
+else:
+  print("Es un año anterior a 2021")
