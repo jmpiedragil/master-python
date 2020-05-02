@@ -40,7 +40,7 @@ print("\n########## EJEMPLO 2 ##########")
 
 year = input("¿En qué año estamos?: ")
 
-if int(year) >= 2021:
-  print("Estamos de 2021 en adelante")
+if int(year) < 2021:
+  print("Estamos antes de 2021")
 else:
-  print("Es un año anterior a 2021")
+  print("Es un año igual o posterior a 2021")
