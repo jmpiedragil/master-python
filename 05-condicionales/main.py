@@ -4,7 +4,7 @@
 SI se_cumple_esta_condición:
   Ejecutar grupo de instrucciones
 SI NO:
-  Se ejecutan otro grupo de instrcciones
+  Se ejecutan otro grupo de instrucciones
 
 if condicion:
   instrucciones
