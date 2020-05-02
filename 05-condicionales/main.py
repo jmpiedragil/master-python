@@ -64,3 +64,15 @@ if edad >= mayoria_edad:
     print(f"Es europeo y de {ciudad}")
 else:
   print(f"{nombre} No es mayor de edad")
+
+# Ejemplo 4
+
+print("\n########## EJEMPLO 4 ##########")
+
+dia = 2
+
+if dia == 1:
+  print("Es lunes")
+else:
+  if dia == 2:
+    print("Es martes")
