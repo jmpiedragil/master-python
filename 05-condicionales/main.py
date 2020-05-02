@@ -17,7 +17,7 @@ else:
 
 print("########## EJEMPLO 1 ##########")
 
-color = "rojo"
+color = "verde"
 
 if color == "rojo":
   print("¡¡Enhorabuena!!")
