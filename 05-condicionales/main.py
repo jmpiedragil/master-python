@@ -126,7 +126,7 @@ else:
 
 print("\n########## EJEMPLO 6 ##########")
 
-pais = "Alemania"
+pais = "España"
 
 if pais == "México" or pais == "España" or pais == "Colombia":
   print(f"¡¡{pais} es un país de habla hispana!!")
