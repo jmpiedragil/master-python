@@ -71,6 +71,7 @@ print("\n########## EJEMPLO 4 ##########")
 
 dia = int(input("Introduce el número del día de la semana: "))
 
+"""
 if dia == 1:
   print("Es lunes")
 else:
@@ -86,4 +87,31 @@ else:
         if dia == 5:
           print("Es viernes")
         else:
-          print("Es fin de semana")  
+          print("Es fin de semana")
+"""
+
+if dia == 1:
+  print("Es lunes")
+elif dia == 2:
+  print("Es martes")
+elif dia == 3:
+  print("Es miércoles")
+elif dia == 4:
+  print("Es jueves")
+elif dia == 5:
+  print("Es viernes")
+else:
+  print("Es fin de semana")
+
+# Ejemplo 5
+
+print("\n########## EJEMPLO 5 ##########")
+
+edad_minima = 18
+edad_maxima = 65
+edad_oficial = 17
+
+if edad_oficial >= edad_minima and edad_oficial <= edad_maxima:
+  print("¡¡Está en edad de trabajar!!")
+else:
+  print("No está en edad de trabajar")
