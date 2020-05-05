@@ -143,3 +143,14 @@ if not (pais == "México" or pais == "España" or pais == "Colombia"):
   print(f"{pais} no es un país de habla hispana :C")
 else:
   print(f"¡¡{pais} es un país de habla hispana!!")
+
+# Ejemplo 8
+
+print("\n########## EJEMPLO 8 ##########")
+
+pais = "Colombia"
+
+if pais != "México" and pais != "España" and pais != "Colombia":
+  print(f"{pais} no es un país de habla hispana :C")
+else:
+  print(f"¡¡{pais} es un país de habla hispana :)!!")
