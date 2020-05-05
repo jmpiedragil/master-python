@@ -121,3 +121,14 @@ if edad_oficial >= edad_minima and edad_oficial <= edad_maxima:
   print("¡¡Está en edad de trabajar!!")
 else:
   print("No está en edad de trabajar")
+
+# Ejemplo 6
+
+print("\n########## EJEMPLO 6 ##########")
+
+pais = "Alemania"
+
+if pais == "México" or pais == "España" or pais == "Colombia":
+  print(f"¡¡{pais} es un país de habla hispana!!")
+else:
+  print(f"{pais} no es un país de habla hispana :C")
