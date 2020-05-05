@@ -20,6 +20,12 @@ else:
 <= menor o igual que
 >= mayor o igual que
 
+# Operadores lógicos
+and Y
+or  O
+!   negación
+not NO
+
 """
 
 # Ejemplo 1
@@ -109,7 +115,7 @@ print("\n########## EJEMPLO 5 ##########")
 
 edad_minima = 18
 edad_maxima = 65
-edad_oficial = 17
+edad_oficial = int(input("¿Tienes edad de trabajar? Introduce tu edad: "))
 
 if edad_oficial >= edad_minima and edad_oficial <= edad_maxima:
   print("¡¡Está en edad de trabajar!!")
