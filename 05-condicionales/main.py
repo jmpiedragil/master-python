@@ -148,7 +148,7 @@ else:
 
 print("\n########## EJEMPLO 8 ##########")
 
-pais = "Colombia"
+pais = "USA"
 
 if pais != "México" and pais != "España" and pais != "Colombia":
   print(f"{pais} no es un país de habla hispana :C")
