@@ -28,6 +28,11 @@ if numero_usuario < 1:
 print(f"\n##### Tabla de multiplicar del número {numero_usuario} #####")
 
 for numero_tabla in range(1, 11):
+
+  if numero_usuario == 45:
+    print("¡¡No se pueden utilizar números prohibidos!!")
+    break
+  
   print(f"{numero_usuario} * {numero_tabla} = {numero_usuario * numero_tabla}")
 else:
   print("Tabla finaliza.")
