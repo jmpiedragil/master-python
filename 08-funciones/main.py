@@ -30,3 +30,13 @@ def muestraNombre():
 muestraNombre()
 muestraNombre()
 muestraNombre()
+
+# Ejemplo 2: parámetros
+print("##### EJEMPLO 2 #####")
+
+def mostrarTuNombre(nombre):
+  print(f"Tu nombre es: {nombre}")
+
+mostrarTuNombre("Víctor Robles")
+mostrarTuNombre("Paquito")
+mostrarTuNombre("Juanfran")
