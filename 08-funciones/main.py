@@ -34,9 +34,13 @@ muestraNombre()
 # Ejemplo 2: parámetros
 print("##### EJEMPLO 2 #####")
 
-def mostrarTuNombre(nombre):
+def mostrarTuNombre(nombre, edad):
   print(f"Tu nombre es: {nombre}")
 
-nombre = input("Introduce tu nombre: ")
+  if edad >= 18:
+    print("Y eres mayor de edad.")
 
-mostrarTuNombre(nombre)
+nombre = input("Introduce tu nombre: ")
+edad = int(input("Introduce tu edad: "))
+
+mostrarTuNombre(nombre, edad)
