@@ -37,6 +37,6 @@ print("##### EJEMPLO 2 #####")
 def mostrarTuNombre(nombre):
   print(f"Tu nombre es: {nombre}")
 
-mostrarTuNombre("Víctor Robles")
-mostrarTuNombre("Paquito")
-mostrarTuNombre("Juanfran")
+nombre = input("Introduce tu nombre: ")
+
+mostrarTuNombre(nombre)
