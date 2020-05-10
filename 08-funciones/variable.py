@@ -21,5 +21,6 @@ def holaMundo():
   year = 2021
   print(year)
 
-holaMundo()
-print(year)
+  return year
+
+print(holaMundo())
