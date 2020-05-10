@@ -129,4 +129,8 @@ def getApellidos(apellidos):
   texto = f"Los apellidos son: {apellidos}"
   return texto
 
-print(getNombre("Javier"), getApellidos("Piedragil Gálvez"))
+def devuelveTodo(nombre, apellidos):
+  texto = getNombre(nombre) + "\n" + getApellidos(apellidos)
+  return texto
+
+print(devuelveTodo("Javier", "Piedragil Gálvez"))
