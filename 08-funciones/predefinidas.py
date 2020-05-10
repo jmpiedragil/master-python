@@ -22,3 +22,6 @@ print(frase.strip())
 # Limpiar variables
 year = 2022
 print(year)
+
+del year
+print(year)
