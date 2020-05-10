@@ -19,3 +19,6 @@ frase = "    mi contenido   "
 print(frase)
 print(frase.strip())
 
+# Limpiar variables
+year = 2022
+print(year)
