@@ -73,7 +73,7 @@ print("##### EJEMPLO 4 #####")
 
 # Parámetros opcionales
 
-def getEmpleado(nombre, dni = False):
+def getEmpleado(nombre, dni = None):
   print("EMPLEADO")
   print(f"Nombre: {nombre}")
   print(f"DNI: {dni}")
