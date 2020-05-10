@@ -81,3 +81,13 @@ def getEmpleado(nombre, dni = None):
     print(f"DNI: {dni}")
 
 getEmpleado("Javier Piedragil", 4545233)
+
+# Ejemplo 5: return o devolver datos.
+print("##### EJEMPLO 5 #####")
+
+def saludame(nombre):
+  saludos = f"Hola, saludos {nombre}"
+
+  return saludos
+
+print(saludame("Javier"))
