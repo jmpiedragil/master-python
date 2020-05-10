@@ -67,3 +67,15 @@ print("---------------------------------------------")
 
 for numero_tabla in range(1, 11):
   tabla(numero_tabla)
+
+# Ejemplo 4
+print("##### EJEMPLO 4 #####")
+
+# Parámetros opcionales
+
+def getEmpleado(nombre, dni):
+  print("EMPLEADO")
+  print(f"Nombre: {nombre}")
+  print(f"DNI: {dni}")
+
+getEmpleado("Javier Piedragil", "9983744")
