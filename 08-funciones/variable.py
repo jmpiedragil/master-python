@@ -21,6 +21,11 @@ def holaMundo():
   year = 2021
   print(year)
 
+  global website
+  website = "piedragil.com"
+  print("DENTRO: ", website)
+
   return "Dato devuelto" + " " + str(year)
 
 print(holaMundo())
+print("FUERA: ", website)
