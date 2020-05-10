@@ -44,3 +44,26 @@ nombre = input("Introduce tu nombre: ")
 edad = int(input("Introduce tu edad: "))
 
 mostrarTuNombre(nombre, edad)
+
+# Ejemplo 3
+print("##### EJEMPLO 3 #####")
+
+def tabla(numero):
+  print(f"Tabla de multiplicar del número: {numero}")
+
+  for contador in range(11):
+    operacion = numero * contador
+    print(f"{numero} * {contador} = {operacion}")
+
+  print("\n")
+
+tabla(3)
+tabla(7)
+tabla(12)
+
+# Ejemplo 3.1
+
+print("---------------------------------------------")
+
+for numero_tabla in range(1, 11):
+  tabla(numero_tabla)
