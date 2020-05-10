@@ -69,7 +69,7 @@ for numero_tabla in range(1, 11):
   tabla(numero_tabla)
 
 # Ejemplo 4
-print("##### EJEMPLO 4 #####")
+print("\n##### EJEMPLO 4 #####")
 
 # Parámetros opcionales
 
@@ -83,7 +83,7 @@ def getEmpleado(nombre, dni = None):
 getEmpleado("Javier Piedragil", 4545233)
 
 # Ejemplo 5: return o devolver datos.
-print("##### EJEMPLO 5 #####")
+print("\n##### EJEMPLO 5 #####")
 
 def saludame(nombre):
   saludos = f"Hola, saludos {nombre}"
@@ -93,7 +93,7 @@ def saludame(nombre):
 print(saludame("Javier"))
 
 # Ejemplo 6
-print("##### EJEMPLO 6 #####")
+print("\n##### EJEMPLO 6 #####")
 
 def calculadora(numero1, numero2, basicas = False):
 
@@ -104,14 +104,16 @@ def calculadora(numero1, numero2, basicas = False):
 
   cadena = ""
 
-  cadena += "Suma: " + str(suma)
-  cadena += "\n"
-  cadena += "Resta: " + str(resta)
-  cadena += "\n"
-  cadena += "Multiplicación: " + str(multi)
-  cadena += "\n"
-  cadena += "División: " + str(division)
+  if basicas != False:
+    cadena += "Suma: " + str(suma)
+    cadena += "\n"
+    cadena += "Resta: " + str(resta)
+    cadena += "\n"
+  else:
+    cadena += "Multiplicación: " + str(multi)
+    cadena += "\n"
+    cadena += "División: " + str(division)
 
   return cadena
 
-print(calculadora(5, 5))
+print(calculadora(56, 5, True))
