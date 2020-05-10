@@ -73,9 +73,9 @@ print("##### EJEMPLO 4 #####")
 
 # Parámetros opcionales
 
-def getEmpleado(nombre, dni):
+def getEmpleado(nombre, dni = False):
   print("EMPLEADO")
   print(f"Nombre: {nombre}")
   print(f"DNI: {dni}")
 
-getEmpleado("Javier Piedragil", "9983744")
+getEmpleado("Javier Piedragil")
