@@ -17,3 +17,5 @@ if not isinstance(nombre, float):
 # Limpiar espacios
 frase = "    mi contenido   "
 print(frase)
+print(frase.strip())
+
