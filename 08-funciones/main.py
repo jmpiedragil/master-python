@@ -76,6 +76,8 @@ print("##### EJEMPLO 4 #####")
 def getEmpleado(nombre, dni = None):
   print("EMPLEADO")
   print(f"Nombre: {nombre}")
-  print(f"DNI: {dni}")
+
+  if dni != None:
+    print(f"DNI: {dni}")
 
 getEmpleado("Javier Piedragil")
