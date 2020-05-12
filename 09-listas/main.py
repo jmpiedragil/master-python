@@ -66,4 +66,7 @@ contactos = [
   ]
 ]
 
-print(contactos[1][1])
+for contacto in contactos:
+  print(contacto[0])
+
+# print(contactos[1][1])
