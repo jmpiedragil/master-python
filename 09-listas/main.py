@@ -66,4 +66,4 @@ contactos = [
   ]
 ]
 
-print(contactos)
+print(contactos[1][1])
