@@ -67,6 +67,12 @@ contactos = [
 ]
 
 for contacto in contactos:
-  print(contacto[0])
+  for elemento in contacto:
+    if contacto.index(elemento) == 0:
+      print("Nombre: " + elemento)
+    else:
+      print("Email: " +  elemento)
+
+  print("\n")
 
 # print(contactos[1][1])
