@@ -41,7 +41,29 @@ cantantes.append("Natos y waor")
 print(cantantes)
 
 # Recorrer lista
+"""
 print("\n########## LISTADO DE PELÍCULAS ##########")
 
 for pelicula in peliculas:
   print(f"{peliculas.index(pelicula)}. {pelicula}")
+"""
+
+# Listas multidimensionales
+print("\n########## Listado de contactos ##########")
+
+contactos = [
+  [
+    'Antonio',
+    'antonio@antonio.com'
+  ],
+  [
+    'Luis',
+    'luis@luis.com'
+  ],
+  [
+    'Salvador',
+    'salvador@salvador.com'
+  ]
+]
+
+print(contactos)
