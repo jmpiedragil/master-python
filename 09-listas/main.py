@@ -15,7 +15,14 @@ cantantes = list(('2pac', 'Drake', 'Jennifer López'))
 years = list(range(2020, 2050))
 variada = ["Javier", 30, 4.4, True, "Texto"]
 
+"""
 print(peliculas)
 print(cantantes)
 print(years)
 print(variada)
+"""
+
+# Índices
+print(peliculas[1])
+print(peliculas[-2])
+print(cantantes[1:3])
