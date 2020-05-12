@@ -39,3 +39,9 @@ cantantes.append("Kase O")
 cantantes.append("Natos y waor")
 
 print(cantantes)
+
+# Recorrer lista
+print("\n########## LISTADO DE PELÍCULAS ##########")
+
+for pelicula in peliculas:
+  print(f"{peliculas.index(pelicula)}. {pelicula}")
