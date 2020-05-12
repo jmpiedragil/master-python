@@ -23,6 +23,12 @@ print(variada)
 """
 
 # Índices
+pelicula = "otra cosa"
+peliculas[1] = "Gran Torino"
+peliculas[2] = "El hobbit"
+
+print(peliculas)
+
 print(peliculas[1])
 print(peliculas[-2])
 print(cantantes[1:3])
