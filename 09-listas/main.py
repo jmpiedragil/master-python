@@ -25,4 +25,4 @@ print(variada)
 # Índices
 print(peliculas[1])
 print(peliculas[-2])
-print(cantantes[0:3])
+print(cantantes[1:3])
