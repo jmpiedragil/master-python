@@ -10,12 +10,19 @@ Ejercicio 1
   - Buscar algún elemento que el usuario pida por teclado
 
 """
+def construirLista(lista):
+
+  resultado = ""
+
+  for elemento in lista:
+    resultado = resultado + str(elemento) + " "
+
+  return resultado
 
 numeros = [34, 56, 2, 143, 104, 0, 10, 17]
 numero_a_buscar = 0
 
-for numero in numeros:
-  print(numero)
+print(construirLista(numeros))
 
 numeros.sort()
 
