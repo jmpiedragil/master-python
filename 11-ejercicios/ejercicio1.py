@@ -21,6 +21,7 @@ def construirLista(lista):
 
 numeros = [34, 56, 2, 143, 104, 0, 10, 17]
 numero_a_buscar = 0
+validar_numero = False
 
 print(construirLista(numeros))
 
@@ -30,7 +31,13 @@ print(numeros)
 
 print(f"La longitud de la lista es: {len(numeros)}")
 
-numero_a_buscar = int(input("Introduzca el número a buscar: "))
+while not validar_numero:
+  numero_a_buscar = int(input("Introduzca el número a buscar: "))
+
+  if isinstance(numero_a_buscar, int):
+    validar_numero = True
+  else:
+    print("Por favor introduzca un número entero")
 
 if numero_a_buscar in numeros:
   print(f"¡El número {numero_a_buscar} existe en la lista!")
