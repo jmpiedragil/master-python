@@ -12,50 +12,24 @@ Ejemplo 5
 
 """
 
-juegos = [
-  [
-    {
-      "nombre": "GTA",
-    },
-    {
-      "nombre": "COD",
-    },
-    {
-      "nombre": "PUGB",
-    }
-  ],
-  [
-    {
-      "nombre": "ASSASINS",
-    },
-    {
-      "nombre": "CRASH",
-    },
-    {
-      "nombre": "PRINCE OF PERSIA",
-    }
-  ],
-  [
-    {
-      "nombre": "FIFA 21",
-    },
-    {
-      "nombre": "PRO 21",
-    },
-    {
-      "nombre": "MOTO GP 21",
-    }
-  ]
+tabla = [
+
+  {
+    "categoria": "ACCION",
+    "juegos": ["GTA", "COD", "PUGB"]
+  },
+  {
+    "categoria": "AVENTURA",
+    "juegos": ["ASSASINS", "CRASH", "PRINCE OF PERSIA"]
+  },
+  {
+    "categoria": "DEPORTES",
+    "juegos": ["FIFA 21", "PRO 21", "MOTO GP 21"]
+  }
 ]
 
-for juego in juegos:
+for categoria in tabla:
 
-  if juegos.index(juego) == 0:
-    print("########## Juegos de acción ##########")
-  elif juegos.index(juego) == 1:
-    print("\n########## Juegos de aventura ##########")
-  elif juegos.index(juego) == 2:
-    print("\n########## Juegos de deportes ##########")
-
-  for elemento in juego:
-    print(f"Nombre: {elemento['nombre']}")
+  print(f"\n########## JUEGOS DE {categoria['categoria']} ##########")
+  for juego in categoria['juegos']:
+    print(juego)
