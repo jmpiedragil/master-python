@@ -19,3 +19,15 @@ while len(valores) < 120:
 
 for elemento in valores:
   print(f"Elemento {valores.index(elemento)}: {elemento}")
+
+print("############# Usando for #############")
+
+valores = []
+elemento = 0
+
+for contador in range(0, 120):
+  valores.append(contador)
+
+while elemento < 120:
+  print(f"Elemento {valores.index(elemento)}: {elemento}")
+  elemento += 1
