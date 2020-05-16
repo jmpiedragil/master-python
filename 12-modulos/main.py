@@ -11,6 +11,8 @@ también podemos crear nuestros módulos.
 """
 #from mimodulo import holaMundo
 from mimodulo import *
+import datetime
+
 
 # print(mimodulo.holaMundo("Javier Piedragil Gálvez"))
 
@@ -19,3 +21,19 @@ from mimodulo import *
 print(holaMundo("Javier Piedragil Gálvez"))
 
 print(calculadora(3, 5, True))
+
+# Módulo de fechas
+
+print(datetime.date.today())
+
+fecha_completa = datetime.datetime.now()
+
+print(fecha_completa)
+print(fecha_completa.year)
+print(fecha_completa.month)
+print(fecha_completa.day)
+
+fecha_personalizada = fecha_completa.strftime("%d%m%y, %H:%M:%S")
+print("Mi fecha personalizada", fecha_personalizada)
+
+print(datetime.datetime.now().timestamp())
