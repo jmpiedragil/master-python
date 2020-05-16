@@ -36,4 +36,4 @@ print(fecha_completa.day)
 fecha_personalizada = fecha_completa.strftime("%d%m%y, %H:%M:%S")
 print("Mi fecha personalizada", fecha_personalizada)
 
-print(datetime.datetime.now().timestamp())
+print(datetime.datetime.now().time())
