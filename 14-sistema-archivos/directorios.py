@@ -10,7 +10,10 @@ else:
 #os.rmdir("./14-sistema-archivos/mi-carpeta")
 
 # Copiar
-ruta_original = "./14-sistema-archivos/mi-carpeta"
-ruta_nueva =  "./14-sistema-archivos/mi-carpeta_COPIADA"
+#ruta_original = "./14-sistema-archivos/mi-carpeta"
+#ruta_nueva =  "./14-sistema-archivos/mi-carpeta_COPIADA"
 
-shutil.copytree(ruta_original, ruta_nueva)
+#shutil.copytree(ruta_original, ruta_nueva)
+
+# Eliminar
+os.rmdir("./14-sistema-archivos/mi-carpeta_COPIADA")
