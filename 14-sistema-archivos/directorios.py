@@ -16,4 +16,11 @@ else:
 #shutil.copytree(ruta_original, ruta_nueva)
 
 # Eliminar
-os.rmdir("./14-sistema-archivos/mi-carpeta_COPIADA")
+#os.rmdir("./14-sistema-archivos/mi-carpeta_COPIADA")
+
+# Mostrar el contenido de una carpeta
+print("Contenido de mi carpeta:")
+
+contenido = os.listdir("./14-sistema-archivos/mi-carpeta")
+
+print(contenido)
