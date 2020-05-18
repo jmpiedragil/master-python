@@ -10,8 +10,7 @@ archivo_lectura = open(ruta, "r")
 # Leer contenido
 contenido = archivo_lectura.read()
 
-for elemento in contenido:
-  print(elemento)
+print(contenido)
 
 # Cerrar archivo
 archivo_lectura.close()
