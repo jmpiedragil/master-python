@@ -19,4 +19,5 @@ lista = archivo_lectura.readlines()
 archivo_lectura.close()
 
 for renglon in lista:
-  print("- " + renglon.upper())
+  lista_renglon = renglon.split()
+  print(lista_renglon)
