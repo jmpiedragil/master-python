@@ -25,6 +25,6 @@ for renglon in lista:
 # Copiar
 ruta_original = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_texto.txt"
 ruta_nueva = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_copiado.txt"
-ruta_alternativa = "./07-ejercicios/fichero_copiado77.txt"
+ruta_alternativa = str(pathlib.Path().absolute()) + "/07-ejercicios/fichero_copiado77.txt"
 
-shutil.copyfile(ruta_original, ruta_nueva)
+shutil.copyfile(ruta_original, ruta_alternativa)
