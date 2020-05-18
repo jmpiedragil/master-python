@@ -43,4 +43,4 @@ for renglon in lista:
 
 # Comprobar si existe
 
-print(os.path.abspath("./"))
+print(os.path.abspath("../"))
