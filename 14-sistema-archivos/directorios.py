@@ -23,4 +23,5 @@ print("Contenido de mi carpeta:")
 
 contenido = os.listdir("./14-sistema-archivos/mi-carpeta")
 
-print(contenido)
+for fichero in contenido:
+  print("Fichero: " + fichero)
