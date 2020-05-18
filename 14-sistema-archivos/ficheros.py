@@ -8,9 +8,14 @@ print(ruta)
 archivo_lectura = open(ruta, "r")
 
 # Leer contenido
-contenido = archivo_lectura.read()
+#contenido = archivo_lectura.read()
 
-print(contenido)
+#print(contenido)
+
+# Leer contenido y guardarlo en una lista
+lista = archivo_lectura.readlines()
 
 # Cerrar archivo
 archivo_lectura.close()
+
+print(lista)
