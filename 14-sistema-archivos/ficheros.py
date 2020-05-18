@@ -18,4 +18,5 @@ lista = archivo_lectura.readlines()
 # Cerrar archivo
 archivo_lectura.close()
 
-print(lista)
+for renglon in lista:
+  print("- " + renglon)
