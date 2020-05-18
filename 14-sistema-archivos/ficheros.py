@@ -1,5 +1,6 @@
 from io import open
 import pathlib
+import shutil
 
 # Abrir archivo
 ruta = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_texto.txt"
@@ -20,3 +21,10 @@ archivo_lectura.close()
 
 for renglon in lista:
   print("- " + renglon.center(100))
+
+# Copiar
+ruta_original = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_texto.txt"
+ruta_nueva = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_copiado.txt"
+ruta_alternativa = "./07-ejercicios/fichero_copiado77.txt"
+
+shutil.copyfile(ruta_original, ruta_nueva)
