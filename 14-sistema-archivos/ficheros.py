@@ -1,6 +1,7 @@
 from io import open
 import pathlib
 import shutil
+import os
 
 # Abrir archivo
 ruta = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_texto.txt"
@@ -30,7 +31,11 @@ for renglon in lista:
 #shutil.copyfile(ruta_original, ruta_alternativa)
 
 # Mover
-ruta_original = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_copiado.txt"
-ruta_nueva = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_copiado_NUEVO.txt"
+#ruta_original = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_copiado.txt"
+#ruta_nueva = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_copiado_NUEVO.txt"
 
-shutil.move(ruta_original, ruta_nueva)
+#shutil.move(ruta_original, ruta_nueva)
+
+# Eliminar
+ruta_nueva = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_copiado_NUEVO.txt"
+os.remove(ruta_nueva)
