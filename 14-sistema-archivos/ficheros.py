@@ -2,15 +2,16 @@ from io import open
 import pathlib
 
 # Abrir archivo
-ruta = str(pathlib.Path().absolute()) + "/fichero_texto.txt"
+ruta = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_texto.txt"
+print(ruta)
 
-archivo = open(ruta, "a+")
+archivo_lectura = open(ruta, "r")
 
-# Escribir
+# Leer contenido
+contenido = archivo_lectura.read()
 
-archivo.write("********** Soy un texto metido desde Python **********\n")
+for elemento in contenido:
+  print(elemento)
 
 # Cerrar archivo
-
-archivo.close()
-
+archivo_lectura.close()
