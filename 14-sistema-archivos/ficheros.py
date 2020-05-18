@@ -45,7 +45,10 @@ for renglon in lista:
 
 #print(os.path.abspath("../"))
 
-if os.path.isfile(os.path.abspath("./") + "/14-sistema-archivos/fichero_texto.txt"):
+ruta_comprobar = os.path.abspath("./") + "/14-sistema-archivos/fichero_texto.txt"
+print(ruta_comprobar)
+
+if os.path.isfile(ruta_comprobar):
   print("El archivo existe")
 else:
   print("El archivo no existe")
