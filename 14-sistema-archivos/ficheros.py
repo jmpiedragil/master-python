@@ -2,6 +2,7 @@ from io import open
 import pathlib
 import shutil
 import os
+import os.path
 
 # Abrir archivo
 ruta = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_texto.txt"
@@ -37,5 +38,9 @@ for renglon in lista:
 #shutil.move(ruta_original, ruta_nueva)
 
 # Eliminar
-ruta_nueva = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_copiado_NUEVO.txt"
-os.remove(ruta_nueva)
+#ruta_nueva = str(pathlib.Path().absolute()) + "\\14-sistema-archivos\\fichero_copiado_NUEVO.txt"
+#os.remove(ruta_nueva)
+
+# Comprobar si existe
+
+print(os.path.abspath("./"))
