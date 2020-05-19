@@ -24,7 +24,7 @@ try:
   print("El cuadrado es " + str(numero * numero))
 except TypeError:
   print("¡¡Debes convertir tus cadenas a enteros!!")
-except ValueError:
-  print("¡¡Introduce un número correcto!!")
+#except ValueError:
+# print("¡¡Introduce un número correcto!!")
 except Exception as e:
-  print("Ha ocurrido un error:", type(e)-__name__)
+  print("Ha ocurrido un error:", type(e).__name__)
