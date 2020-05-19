@@ -27,4 +27,5 @@ except TypeError:
 #except ValueError:
 # print("¡¡Introduce un número correcto!!")
 except Exception as e:
+  print(type(e))
   print("Ha ocurrido un error:", type(e).__name__)
