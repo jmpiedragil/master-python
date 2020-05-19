@@ -32,12 +32,15 @@ print(numeros)
 print(f"La longitud de la lista es: {len(numeros)}")
 
 while not validar_numero:
-  numero_a_buscar = int(input("Introduzca el número a buscar: "))
-
-  if isinstance(numero_a_buscar, int):
-    validar_numero = True
+  try:
+    numero_a_buscar = int(input("Introduzca el número a buscar: "))
+  except:
+    print("El dato introducido no es un número entero")
   else:
-    print("Por favor introduzca un número entero")
+    if isinstance(numero_a_buscar, int):
+      validar_numero = True
+    else:
+      print("Por favor introduzca un número entero")
 
 if numero_a_buscar in numeros:
   print(f"¡El número {numero_a_buscar} existe en la lista!")
