@@ -27,6 +27,16 @@ class Coche:
 
   # Fin definición de clase
 
-coche = Coche
+coche = Coche()
 
-print(coche)
+print(coche.marca, coche.color)
+
+print("Velocidad actual: ", coche.velocidad)
+
+coche.acelerar()
+coche.acelerar()
+coche.acelerar()
+coche.acelerar()
+coche.frenar()
+
+print("Velocidad nueva: ", coche.velocidad)
