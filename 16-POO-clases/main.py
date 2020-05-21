@@ -66,4 +66,9 @@ print("COCHE 2: ")
 
 coche2 = Coche()
 
-print(coche2.getColor())
+coche2.setColor("Verde")
+coche2.setModelo("Gallardo")
+
+print(coche2.marca, coche2.getModelo(), coche2.getColor())
+
+print(type(coche2))
