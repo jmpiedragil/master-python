@@ -39,6 +39,8 @@ class Coche:
 
   # Fin definición de clase
 
+print("COCHE 1: ")
+
 coche = Coche()
 
 coche.setColor("amarillo")
@@ -55,3 +57,13 @@ coche.acelerar()
 coche.frenar()
 
 print("Velocidad nueva: ", coche.velocidad)
+
+print("-------------------------------------------------")
+
+# Crear más objetos
+
+print("COCHE 2: ")
+
+coche2 = Coche()
+
+print(coche2.getColor())
