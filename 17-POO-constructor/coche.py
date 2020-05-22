@@ -51,7 +51,7 @@ class Coche:
     info += "\n Color: " + self.getColor()
     info += "\n Marca: " + self.getMarca()
     info += "\n Modelo: " + self.getModelo()
-    info += "\n Velocidad: " + self.getVelocidad()
+    info += "\n Velocidad: " + str(self.getVelocidad())
 
     return info
 
