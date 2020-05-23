@@ -17,7 +17,8 @@ informatico = clases.Informatico()
 informatico.setNombre("Carlos")
 informatico.setApellidos("Martínez")
 
-print(f"El informático es: {informatico.getNombre()} {informatico.getApellidos()}")
+print(f"El informático es: {informatico.getNombre()} \
+      {informatico.getApellidos()}")
 print(informatico.getLenguajes())
 print(informatico.caminar())
 print(informatico.experiencia)
