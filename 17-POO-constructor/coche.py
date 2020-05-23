@@ -58,4 +58,7 @@ class Coche:
 
     return info
 
+  def getPrivado(self):
+    return self.__soy_privado
+
   # Fin definición de clase

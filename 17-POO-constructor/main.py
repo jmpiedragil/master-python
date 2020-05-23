@@ -22,4 +22,5 @@ else:
 # Visibilidad
 
 print(carro.soy_publico)
-print(carro.__soy_privado)
+# print(carro.__soy_privado)
+print(carro.getPrivado())
