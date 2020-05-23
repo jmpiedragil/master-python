@@ -26,4 +26,6 @@ print("------------------------------------------------------------")
 
 tecnico = clases.TecnicoRedes()
 tecnico.setNombre("Manolo")
-print(tecnico.auditarRedes, tecnico.getNombre()
+print(tecnico.auditarRedes, tecnico.getNombre(), tecnico.getLenguajes())
+
+print("------------------------------------------------------------")
