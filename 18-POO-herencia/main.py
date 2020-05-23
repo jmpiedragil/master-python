@@ -25,4 +25,4 @@ print(informatico.experiencia)
 print("------------------------------------------------------------")
 
 tecnico = clases.TecnicoRedes()
-print(tecnico.auditarRedes)
+print(tecnico.auditarRedes, tecnico.getLenguajes())
