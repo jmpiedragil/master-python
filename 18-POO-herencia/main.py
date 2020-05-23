@@ -25,4 +25,5 @@ print(informatico.experiencia)
 print("------------------------------------------------------------")
 
 tecnico = clases.TecnicoRedes()
-print(tecnico.auditarRedes, tecnico.getNombre())
+tecnico.setNombre("Manolo")
+print(tecnico.auditarRedes, tecnico.getNombre()
