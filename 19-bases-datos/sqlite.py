@@ -25,13 +25,19 @@ cursor.execute("""
                )
 
 # Insertar datos
-
+"""
 cursor.execute("INSERT INTO producto VALUES (" +
                "null, " +
                "'Primer producto', " +
                "'Descripción de mi producto', " +
                "550)"
                )
+"""
+
+# Borrar datos
+
+cursor.execute("DELETE FROM producto")
+
 
 # Guardar cambios
 
