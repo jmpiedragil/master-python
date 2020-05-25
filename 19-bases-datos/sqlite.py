@@ -47,7 +47,7 @@ productos = [
     ("Tablet 15", "Buena tablet", 300),
 ]
 
-cursor.executemany("INSERT INTO producto VALUES(null,?, ?, ?)", productos)
+# cursor.executemany("INSERT INTO producto VALUES(null,?, ?, ?)", productos)
 
 # Guardar cambios
 
@@ -59,6 +59,7 @@ cursor.execute("SELECT * FROM producto;")
 productos = cursor.fetchall()
 
 for producto in productos:
+    print(f"ID: {producto[0]}")
     print(f"Título: {producto[1]}")
     print(f"Descripción: {producto[2]}")
     print(f"Precio: {producto[3]}")
