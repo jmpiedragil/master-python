@@ -36,8 +36,18 @@ cursor.execute("INSERT INTO producto VALUES (" +
 
 # Borrar datos
 
-cursor.execute("DELETE FROM producto")
+# cursor.execute("DELETE FROM producto")
 
+# Insertar muchos registros de golpe
+
+productos = [
+    ("Ordenador portátil", "Buen PC", 700),
+    ("Teléfono móvil", "Buen teléfono", 140),
+    ("Placa base", "Buena placa", 80),
+    ("Tablet 15", "Buena tablet", 300),
+]
+
+cursor.executemany("INSERT INTO producto VALUES(null,?, ?, ?)", productos)
 
 # Guardar cambios
 
