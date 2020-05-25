@@ -39,7 +39,8 @@ conexion.commit()
 cursor.execute("SELECT * FROM producto;")
 productos = cursor.fetchall()
 
-print(productos)
+for producto in productos:
+    print(producto)
 
 # Cerrar conexión
 
