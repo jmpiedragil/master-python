@@ -40,7 +40,10 @@ cursor.execute("SELECT * FROM producto;")
 productos = cursor.fetchall()
 
 for producto in productos:
-    print(producto)
+    print(f"Título: {producto[1]}")
+    print(f"Descripción: {producto[2]}")
+    print(f"Precio: {producto[3]}")
+    print("--------------------------------")
 
 # Cerrar conexión
 
