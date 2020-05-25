@@ -2,6 +2,8 @@
 
 import sqlite3
 
+productos = None
+
 # Conexión
 
 conexion = sqlite3.connect('pruebas.db')
@@ -19,9 +21,24 @@ cursor.execute("CREATE TABLE IF NOT EXISTS producto (" +
                "precio INT(10))"
                )
 
+# Insertar datos
+
+cursor.execute("INSERT INTO producto VALUES (" +
+               "null, " +
+               "'Primer producto', " +
+               "'Descripción de mi producto', " +
+               "550)"
+               )
+
 # Guardar cambios
 
 conexion.commit()
+
+# Listar datos
+
+cursor.execute("SELECT * FROM producto;")
+
+print(cursor)
 
 # Cerrar conexión
 
