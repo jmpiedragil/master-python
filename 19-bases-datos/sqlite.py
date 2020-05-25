@@ -45,6 +45,11 @@ for producto in productos:
     print(f"Precio: {producto[3]}")
     print("--------------------------------")
 
+cursor.execute("SELECT titulo FROM producto;")
+
+producto = cursor.fetchone()
+print(producto)
+
 # Cerrar conexión
 
 conexion.close()
