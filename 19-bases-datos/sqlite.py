@@ -55,7 +55,7 @@ conexion.commit()
 
 # Listar datos
 
-cursor.execute("SELECT * FROM producto;")
+cursor.execute("SELECT * FROM producto WHERE precio >= 100;")
 productos = cursor.fetchall()
 
 for producto in productos:
