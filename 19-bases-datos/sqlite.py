@@ -14,11 +14,14 @@ cursor = conexion.cursor()
 
 # Crear tabla
 
-cursor.execute("CREATE TABLE IF NOT EXISTS producto (" +
-               "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
-               "titulo VARCHAR(255), " +
-               "descripcion TEXT, " +
-               "precio INT(10))"
+cursor.execute("""
+               CREATE TABLE IF NOT EXISTS producto (
+                   id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                   titulo VARCHAR(255),
+                   descripcion TEXT,
+                   precio INT(10)
+               );
+               """
                )
 
 # Insertar datos
