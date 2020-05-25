@@ -37,8 +37,9 @@ conexion.commit()
 # Listar datos
 
 cursor.execute("SELECT * FROM producto;")
+productos = cursor.fetchall()
 
-print(cursor)
+print(productos)
 
 # Cerrar conexión
 
