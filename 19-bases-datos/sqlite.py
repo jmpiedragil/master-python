@@ -49,6 +49,10 @@ productos = [
 
 # cursor.executemany("INSERT INTO producto VALUES(null,?, ?, ?)", productos)
 
+# Modificar datos
+
+cursor.execute("UPDATE producto SET precio = 678 WHERE precio = 80")
+
 # Guardar cambios
 
 conexion.commit()
