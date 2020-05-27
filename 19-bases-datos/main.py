@@ -59,7 +59,11 @@ coches = [
 
 database.commit()
 
-cursor.execute("SELECT * FROM vehiculo WHERE precio <= 5000")
+cursor.execute("""
+    SELECT *
+   FROM vehiculo
+   WHERE precio <= 5000 AND marca = 'Seat'
+""")
 
 resultado = cursor.fetchall()
 
@@ -67,3 +71,8 @@ print("----------- Todos mis coches -----------")
 
 for coche in resultado:
     print(coche[1], coche[3])
+
+cursor.execute("SELECT * FROM vehiculo")
+
+coche = cursor.fetchone()
+print(coche)
