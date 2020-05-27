@@ -38,3 +38,8 @@ cursor.execute("""
         CONSTRAINT pk_vehiculo PRIMARY KEY(id)
     )
 """)
+
+cursor.execute("SHOW TABLES")
+
+for table in cursor:
+    print(table)
