@@ -44,6 +44,15 @@ cursor.execute("SHOW TABLES")
 for table in cursor:
     print(table)
 
-cursor.execute("INSERT INTO vehiculo VALUES(null, 'Opel', 'Astra', 18500)")
+# cursor.execute("INSERT INTO vehiculo VALUES(null, 'Opel', 'Astra', 18500)")
+
+coches = [
+    ('Seat', 'Ibiza', 5000),
+    ('Renault', 'Clio', 15000),
+    ('Citroen', 'Saxo', 2000),
+    ('Mercedes', 'Clase C', 35000),
+]
+
+cursor.executemany("INSERT INTO vehiculo VALUES (null, %s, %s, %s)", coches)
 
 database.commit()
