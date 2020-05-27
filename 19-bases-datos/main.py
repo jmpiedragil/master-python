@@ -39,10 +39,12 @@ cursor.execute("""
     )
 """)
 
+"""
 cursor.execute("SHOW TABLES")
 
 for table in cursor:
     print(table)
+"""
 
 # cursor.execute("INSERT INTO vehiculo VALUES(null, 'Opel', 'Astra', 18500)")
 
@@ -64,5 +66,4 @@ resultado = cursor.fetchall()
 print("----------- Todos mis coches -----------")
 
 for coche in resultado:
-    print(coche)
-
+    print(coche[1])
