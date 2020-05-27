@@ -77,5 +77,7 @@ cursor.execute("SELECT * FROM vehiculo")
 coche = cursor.fetchone()
 print(coche)
 
-cursor.execute("DELETE FROM vehiculo WHERE marca = 'Renault'")
+cursor.execute("DELETE FROM vehiculo WHERE marca = 'Mercedes'")
 database.commit()
+
+print(cursor.rowcount, "borrados")
