@@ -43,3 +43,7 @@ cursor.execute("SHOW TABLES")
 
 for table in cursor:
     print(table)
+
+cursor.execute("INSERT INTO vehiculo VALUES(null, 'Opel', 'Astra', 18500)")
+
+database.commit()
