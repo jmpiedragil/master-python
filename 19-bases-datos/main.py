@@ -59,6 +59,8 @@ coches = [
 
 database.commit()
 
+# Listar / consultar
+
 cursor.execute("""
     SELECT *
    FROM vehiculo
@@ -77,7 +79,16 @@ cursor.execute("SELECT * FROM vehiculo")
 coche = cursor.fetchone()
 print(coche)
 
+# Borrar
+
 cursor.execute("DELETE FROM vehiculo WHERE marca = 'Mercedes'")
 database.commit()
 
 print(cursor.rowcount, "borrados")
+
+# Actualizar
+
+cursor.execute("UPDATE vehiculo SET modelo = 'León' WHERE marca = 'Seat'")
+database.commit()
+
+print(cursor.rowcount, "actualizados")
