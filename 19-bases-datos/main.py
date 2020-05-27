@@ -59,7 +59,7 @@ coches = [
 
 database.commit()
 
-cursor.execute("SELECT * FROM vehiculo")
+cursor.execute("SELECT * FROM vehiculo WHERE precio <= 5000")
 
 resultado = cursor.fetchall()
 
