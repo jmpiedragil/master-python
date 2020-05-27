@@ -66,4 +66,4 @@ resultado = cursor.fetchall()
 print("----------- Todos mis coches -----------")
 
 for coche in resultado:
-    print(coche[1])
+    print(coche[1], coche[3])
