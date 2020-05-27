@@ -53,6 +53,16 @@ coches = [
     ('Mercedes', 'Clase C', 35000),
 ]
 
-cursor.executemany("INSERT INTO vehiculo VALUES (null, %s, %s, %s)", coches)
+# cursor.executemany("INSERT INTO vehiculo VALUES (null, %s, %s, %s)", coches)
 
 database.commit()
+
+cursor.execute("SELECT * FROM vehiculo")
+
+resultado = cursor.fetchall()
+
+print("----------- Todos mis coches -----------")
+
+for coche in resultado:
+    print(coche)
+
