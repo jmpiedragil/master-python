@@ -15,7 +15,7 @@ database = mysql.connector.connect(
 
 # Cursor
 
-cursor = database.cursor()
+cursor = database.cursor(buffered=True)
 
 # Crear base de datos
 """
@@ -76,3 +76,6 @@ cursor.execute("SELECT * FROM vehiculo")
 
 coche = cursor.fetchone()
 print(coche)
+
+cursor.execute("DELETE FROM vehiculo WHERE marca = 'Renault'")
+database.commit()
