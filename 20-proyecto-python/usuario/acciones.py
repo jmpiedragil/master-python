@@ -1,3 +1,6 @@
+import usuario.usuario as modelo
+
+
 class Accion:
 
     def registro(self):
@@ -8,6 +11,17 @@ class Accion:
         apellidos = input("¿Cuáles son tus apellidos?: ")
         email = input("Introduce tu email: ")
         password = input("Introduce tu contraseña: ")
+
+        usuario = modelo.Usuario(nombre, apellidos, email, password)
+
+        registro = usuario.registrar()
+
+        if registro[0] >= 1:
+            print(f"Perfecto {registro[1].nombre}, " +
+                  "te has registrado con el email {registro[1].email}")
+
+        else:
+            print("No te has registrado correctamente")
 
     def login(self):
 

@@ -20,6 +20,16 @@ class Usuario:
         self.email = email
         self.password = password
 
-    # def registrar(self):
+    def registrar(self):
+
+        fecha = "2020-01-29"
+        sql = "INSERT INTO usuario VALUES(null, %s, %s, %s, %s, %s)"
+        usuario = (self.nombre, self.apellidos, self.email, self.password,
+                   fecha)
+
+        cursor.execute(sql, usuario)
+        database.commit()
+
+        return [cursor.rowcount, self]
 
     # def indentificar(self):
