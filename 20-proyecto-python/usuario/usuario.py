@@ -1,4 +1,6 @@
 import mysql.connector
+import datetime
+
 
 database = mysql.connector.connect(
     host="localhost",
@@ -22,7 +24,7 @@ class Usuario:
 
     def registrar(self):
 
-        fecha = "2020-01-29"
+        fecha = datetime.datetime.now()
         sql = "INSERT INTO usuario VALUES(null, %s, %s, %s, %s, %s)"
         usuario = (self.nombre, self.apellidos, self.email, self.password,
                    fecha)

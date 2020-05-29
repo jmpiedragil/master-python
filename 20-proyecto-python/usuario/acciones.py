@@ -18,7 +18,7 @@ class Accion:
 
         if registro[0] >= 1:
             print(f"Perfecto {registro[1].nombre}, " +
-                  "te has registrado con el email {registro[1].email}")
+                  f"te has registrado con el email {registro[1].email}")
 
         else:
             print("No te has registrado correctamente")
