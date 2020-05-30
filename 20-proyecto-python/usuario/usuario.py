@@ -29,9 +29,13 @@ class Usuario:
         usuario = (self.nombre, self.apellidos, self.email, self.password,
                    fecha)
 
-        cursor.execute(sql, usuario)
-        database.commit()
+        try:
+            cursor.execute(sql, usuario)
+            database.commit()
+            result = [cursor.rowcount, self]
+        except:
+            result = [0, self]
 
-        return [cursor.rowcount, self]
+        return result
 
     # def indentificar(self):
