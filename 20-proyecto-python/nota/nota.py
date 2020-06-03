@@ -8,7 +8,7 @@ cursor = connect[1]
 
 class Nota:
 
-    def __init__(self, id_usuario, titulo, descripcion):
+    def __init__(self, id_usuario, titulo="", descripcion=""):
 
         self.id_usuario = id_usuario
         self.titulo = titulo
@@ -24,3 +24,11 @@ class Nota:
         database.commit()
 
         return [cursor.rowcount, self]
+
+    def listar(self):
+
+        sql = f"SELECT * FROM nota WHERE id_usuario =  {self.id_usuario}"
+        cursor.execute(sql)
+        result = cursor.fetchall()
+
+        return result

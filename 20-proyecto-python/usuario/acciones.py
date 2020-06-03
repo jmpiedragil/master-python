@@ -63,7 +63,7 @@ class Accion:
             ejecutar.crear(usuario)
             self.proximasAcciones(usuario)
         elif accion == "mostrar":
-            print("Vamos a mostrar")
+            ejecutar.mostrar(usuario)
             self.proximasAcciones(usuario)
         elif accion == "eliminar":
             print("Vamos a eliminar")
