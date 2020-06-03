@@ -20,9 +20,14 @@ class Accion:
 
     def mostrar(self, usuario):
 
-        print(f"\n¡¡Vale {usuario[1]}!! Aquí tienes tun notas: ")
+        print(f"\n¡¡Vale {usuario[1]}!! Aquí tienes tus notas: ")
 
         nota = modelo.Nota(usuario[0])
         notas = nota.listar()
 
-        print(notas)
+        for nota in notas:
+
+            print("\n********************************************************")
+            print(nota[2])
+            print(nota[3])
+            print("\n********************************************************")
