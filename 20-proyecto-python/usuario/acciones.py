@@ -45,4 +45,28 @@ class Accion:
             print("¡¡Login incorrecto!! Inténtalo más tarde")
 
     def proximasAcciones(self, usuario):
+
+        print("""
+        Acciones disponibles:
+        - Crear nota (crear)
+        - Mostrar tus notas (mostrar)
+        - Eliminar notas (eliminar)
+        - Salir (salir)
+        """)
+
+        accion = input("¿Qué quieres hacer?: ")
+
+        if accion == "crear":
+            print("Vamos a crear")
+            self.proximasAcciones(usuario)
+        elif accion == "mostrar":
+            print("Vamos a mostrar")
+            self.proximasAcciones(usuario)
+        elif accion == "eliminar":
+            print("Vamos a eliminar")
+            self.proximasAcciones(usuario)
+        elif accion == "salir":
+            print(f"Ok {usuario[1]}, ¡¡hasta pronto!!")
+            exit()
+
         return None
