@@ -27,5 +27,18 @@ class Accion:
 
         print("\n¡¡Vale!! Identifícate en el sistema...")
 
-        email = input("Introduce tu email: ")
-        password = input("Introduce tu contraseña: ")
+        try:
+            email = input("Introduce tu email: ")
+            password = input("Introduce tu contraseña: ")
+
+            usuario = modelo.Usuario("", "", email, password)
+
+            login = usuario.indentificar()
+
+            if email == login[3]:
+                print(f"\nBienvenido {login[1]}, te has registrado en el " +
+                      f"sistema el {login[5]}")
+        except Exception as e:
+            print(type(e))
+            print(type(e).__name__)
+            print("¡¡Login incorrecto!! Inténtalo más tarde")

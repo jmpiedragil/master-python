@@ -39,4 +39,22 @@ class Usuario:
 
         return result
 
-    # def indentificar(self):
+    def indentificar(self):
+
+        sql = """
+            SELECT * FROM usuario
+            WHERE email = %s AND password = %s
+         """
+
+        # Cifrar contraseña
+
+        cifrado = hashlib.sha256()
+        cifrado.update(self.password.encode('utf8'))
+
+        usuario = (self.email, cifrado.hexdigest())
+
+        cursor.execute(sql, usuario)
+
+        result = cursor.fetchone()
+
+        return result
