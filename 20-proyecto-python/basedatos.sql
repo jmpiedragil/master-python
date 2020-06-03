@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS usuario(
 )ENGINE=InnoDb;
 
 CREATE TABLE IF NOT EXISTS nota(
-    id          int(25) not null,
+    id          int(25) auto_increment not null,
     id_usuario  int(25) not null,
     titulo      varchar(255) not null,
     descripcion MEDIUMTEXT,
