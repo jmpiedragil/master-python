@@ -38,7 +38,11 @@ class Accion:
             if email == login[3]:
                 print(f"\nBienvenido {login[1]}, te has registrado en el " +
                       f"sistema el {login[5]}")
+                self.proximasAcciones(login)
         except Exception as e:
-            print(type(e))
-            print(type(e).__name__)
+            # print(type(e))
+            # print(type(e).__name__)
             print("¡¡Login incorrecto!! Inténtalo más tarde")
+
+    def proximasAcciones(self, usuario):
+        return None
