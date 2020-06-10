@@ -14,7 +14,7 @@ ventana.geometry("750x450")
 
 # Bloquear el tamaño de la ventana
 
-ventana.resizable(1, 1)
+ventana.resizable(1, 0)
 
 # Arrancar y mostrar la ventana hasta que se cierre.
 
