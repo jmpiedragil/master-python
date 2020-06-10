@@ -66,7 +66,7 @@ class Accion:
             ejecutar.mostrar(usuario)
             self.proximasAcciones(usuario)
         elif accion == "eliminar":
-            print("Vamos a eliminar")
+            ejecutar.borrar(usuario)
             self.proximasAcciones(usuario)
         elif accion == "salir":
             print(f"Ok {usuario[1]}, ¡¡hasta pronto!!")
