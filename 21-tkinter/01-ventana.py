@@ -8,6 +8,14 @@ from tkinter import *
 
 ventana = Tk()
 
+# Título de la ventana
+
+ventana.title("Interfaz gráfica con Python y Javier Piedragil")
+
+# Icono de la ventana
+
+ventana.iconbitmap("./21-tkinter/imagenes/computer_desktop.ico")
+
 # Cambio en el tañamaño de la ventana
 
 ventana.geometry("750x450")
