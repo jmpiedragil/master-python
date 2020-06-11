@@ -59,9 +59,9 @@ class Programa:
 
             ventana.resizable(0, 0)
 
-    def addTexto(self):
+    def addTexto(self, texto):
 
-        texto = Label(self.ventana, text="Hola desde un método")
+        texto = Label(self.ventana, text=texto)
         texto.pack()
 
     def mostrar(self):
@@ -77,9 +77,10 @@ programa = Programa()
 
 programa.cargar()
 
-programa.addTexto()
-programa.addTexto()
-programa.addTexto()
-programa.addTexto()
+programa.addTexto("Hola")
+programa.addTexto("soy un texto")
+programa.addTexto("Bienvenido al Master en Python")
+programa.addTexto("Soy Víctor Robles")
+programa.addTexto("Sígueme en YouTube")
 
 programa.mostrar()
