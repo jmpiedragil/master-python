@@ -5,40 +5,81 @@ from tkinter import *
 import os.path
 
 
-# Crear la ventana raíz
+class Programa:
 
-ventana = Tk()
+    def __init__(self):
 
-# Título de la ventana
+        self.title = "Master en Python Con Víctor Robles"
+        self.icon = "./imagenes/computer_desktop.ico"
+        self.icon_alt = "./21-tkinter/imagenes/computer_desktop.ico"
+        self.size = "770x470"
+        self.resizable = False
 
-ventana.title("Interfaz gráfica con Python y Javier Piedragil")
+    def cargar(self):
 
-# Comprobar si existe un archivo
+        # Crear la ventana raíz
 
-ruta_icono = os.path.abspath('./imagenes/computer_desktop.ico')
+        ventana = Tk()
 
-if not os.path.isfile(ruta_icono):
+        self.ventana = ventana
 
-    ruta_icono = os.path.abspath('./21-tkinter/imagenes/computer_desktop.ico')
+        # Título de la ventana
 
-# Icono de la ventana
+        ventana.title(self.title)
 
-ventana.iconbitmap(ruta_icono)
+        # Comprobar si existe un archivo
 
-# Mostrar texto en el programa
+        ruta_icono = os.path.abspath(self.icon)
 
-texto = Label(ventana, text=ruta_icono)
+        if not os.path.isfile(ruta_icono):
 
-texto.pack()
+            ruta_icono = os.path.abspath(self.icon_alt)
 
-# Cambio en el tañamaño de la ventana
+        # Icono de la ventana
 
-ventana.geometry("750x450")
+        ventana.iconbitmap(ruta_icono)
 
-# Bloquear el tamaño de la ventana
+        # Mostrar texto en el programa
 
-ventana.resizable(0, 1)
+        texto = Label(ventana, text=ruta_icono)
 
-# Arrancar y mostrar la ventana hasta que se cierre.
+        texto.pack()
 
-ventana.mainloop()
+        # Cambio en el tamaño de la ventana
+
+        ventana.geometry(self.size)
+
+        # Bloquear el tamaño de la ventana
+
+        if self.resizable:
+
+            ventana.resizable(1, 1)
+
+        else:
+
+            ventana.resizable(0, 0)
+
+    def addTexto(self):
+
+        texto = Label(self.ventana, text="Hola desde un método")
+        texto.pack()
+
+    def mostrar(self):
+
+        # Arrancar y mostrar la ventana hasta que se cierre.
+
+        self.ventana.mainloop()
+
+
+# Instanciar  mi programa
+
+programa = Programa()
+
+programa.cargar()
+
+programa.addTexto()
+programa.addTexto()
+programa.addTexto()
+programa.addTexto()
+
+programa.mostrar()
