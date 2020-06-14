@@ -1,7 +1,7 @@
 # Tkinter
 # Módulo para crear interfaces gráficas de usuario
 
-from tkinter import *
+import tkinter as tk
 import os.path
 
 
@@ -19,7 +19,7 @@ class Programa:
 
         # Crear la ventana raíz
 
-        ventana = Tk()
+        ventana = tk.Tk()
 
         self.ventana = ventana
 
@@ -41,7 +41,7 @@ class Programa:
 
         # Mostrar texto en el programa
 
-        texto = Label(ventana, text=ruta_icono)
+        texto = tk.Label(ventana, text=ruta_icono)
 
         texto.pack()
 
@@ -61,7 +61,7 @@ class Programa:
 
     def addTexto(self, texto):
 
-        texto = Label(self.ventana, text=texto)
+        texto = tk.Label(self.ventana, text=texto)
         texto.pack()
 
     def mostrar(self):
