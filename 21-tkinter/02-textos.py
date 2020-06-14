@@ -9,7 +9,8 @@ texto.config(fg="white", bg="#000000", padx=50, pady=20, font=("Consolas", 30))
 texto.pack()
 
 texto = tk.Label(ventana, text="Soy Javier M. Piedragil")
-texto.config(height=2, bg="orange")
+texto.config(height=3, bg="orange", font=("Arial", 18), padx=10, pady=20,
+             cursor="circle")
 texto.pack(anchor=tk.SE)
 
 ventana.mainloop()
