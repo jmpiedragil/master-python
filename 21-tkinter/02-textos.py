@@ -19,7 +19,7 @@ texto.config(height=3, bg="orange", font=("Arial", 18), padx=10, pady=20,
 texto.pack(anchor=tk.SE)
 
 texto = tk.Label(ventana, text=pruebas(nombre="Javier M.",
-                 apellidos="Piedragil Gálvez", pais="México"))
+                 pais="México", apellidos="Piedragil Gálvez"))
 
 texto.config(height=3, bg="green", font=("Arial", 18), padx=10, pady=20,
              cursor="spider")
