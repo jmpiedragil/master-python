@@ -17,18 +17,18 @@ texto = tk.Label(ventana, text="Básico 1")
 
 texto.config(height=3, bg="green", font=("Arial", 18), padx=10, pady=20,
              cursor="spider")
-texto.pack(anchor=tk.NW)
+texto.pack(side=tk.LEFT, fill=tk.X, expand=tk.YES)
 
 texto = tk.Label(ventana, text="Básico 2")
 
 texto.config(height=3, bg="red", font=("Arial", 18), padx=10, pady=20,
              cursor="spider")
-texto.pack(anchor=tk.NW)
+texto.pack(side=tk.LEFT, fill=tk.X, expand=tk.YES)
 
 texto = tk.Label(ventana, text="Básico 3")
 
 texto.config(height=3, bg="orange", font=("Arial", 18), padx=10, pady=20,
              cursor="spider")
-texto.pack(anchor=tk.NW)
+texto.pack(side=tk.LEFT, fill=tk.X, expand=tk.YES)
 
 ventana.mainloop()
