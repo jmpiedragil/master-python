@@ -1,6 +1,11 @@
 import tkinter as tk
 
 
+def pruebas(nombre, apellidos, pais):
+
+    return f"Hola {nombre} {apellidos} veo que eres de {pais}"
+
+
 ventana = tk.Tk()
 ventana.geometry("700x500")
 
@@ -13,8 +18,10 @@ texto.config(height=3, bg="orange", font=("Arial", 18), padx=10, pady=20,
              cursor="spider")
 texto.pack(anchor=tk.SE)
 
-texto = tk.Label(ventana, text="Master en Python")
-texto.config(height=3, bg="red", font=("Arial", 18), padx=10, pady=20,
+texto = tk.Label(ventana, text=pruebas(nombre="Javier M.",
+                 apellidos="Piedragil Gálvez", pais="México"))
+
+texto.config(height=3, bg="green", font=("Arial", 18), padx=10, pady=20,
              cursor="spider")
 texto.pack(anchor=tk.NW)
 
