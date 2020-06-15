@@ -27,7 +27,7 @@ texto.pack(side=tk.LEFT, fill=tk.X, expand=tk.YES)
 
 texto = tk.Label(ventana, text="Básico 3")
 
-texto.config(height=3, bg="orange", font=("Arial", 18), padx=10, pady=20,
+texto.config(height=3, bg="pink", font=("Arial", 18), padx=10, pady=20,
              cursor="spider")
 texto.pack(side=tk.LEFT, fill=tk.X, expand=tk.YES)
 
