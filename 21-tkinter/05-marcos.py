@@ -20,9 +20,7 @@ texto = tk.Label(marco, text="Primer marco")
 texto.config(
     bg="red",
     fg="white",
-    font=("Arial", 20),
-    bd=3,
-    relief=tk.SOLID
+    font=("Arial", 20)
 )
 texto.pack(anchor=tk.CENTER, fill=tk.Y, expand=tk.YES)
 
