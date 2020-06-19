@@ -20,14 +20,11 @@ texto = tk.Label(marco, text="Primer marco")
 texto.config(
     bg="red",
     fg="white",
-    height=4,
-    width=10,
     font=("Arial", 20),
-    anchor=tk.CENTER,
     bd=3,
     relief=tk.SOLID
 )
-texto.pack()
+texto.pack(anchor=tk.CENTER, fill=tk.Y, expand=tk.YES)
 
 marco = tk.Frame(marco_padre, width=250, height=250)
 
