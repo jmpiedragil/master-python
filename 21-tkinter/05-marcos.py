@@ -8,8 +8,7 @@ ventana.geometry("700x700")
 
 marco_padre = tk.Frame(ventana, width=250, height=250)
 
-marco_padre.config(bg="lightblue", bd=5, relief=tk.RAISED)
-marco_padre.pack(side=tk.BOTTOM, fill=tk.X, expand=tk.YES)
+marco_padre.pack(side=tk.BOTTOM, anchor=tk.S, fill=tk.X, expand=tk.YES)
 
 marco = tk.Frame(marco_padre, width=250, height=250)
 
@@ -23,8 +22,7 @@ marco.pack(side=tk.RIGHT, anchor=tk.SE)
 
 marco_padre = tk.Frame(ventana, width=250, height=250)
 
-marco_padre.config(bg="lightblue")
-marco_padre.pack(side=tk.TOP, fill=tk.X, expand=tk.YES)
+marco_padre.pack(side=tk.TOP, anchor=tk.N, fill=tk.X, expand=tk.YES)
 
 marco = tk.Frame(marco_padre, width=250, height=250)
 
