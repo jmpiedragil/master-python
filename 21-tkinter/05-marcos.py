@@ -4,17 +4,36 @@ import tkinter as tk
 ventana = tk.Tk()
 
 ventana.title("Marcos | Master en Python")
-ventana.geometry("700x400")
+ventana.geometry("700x700")
 
-marco = tk.Frame(ventana, width=250, height=250)
+marco_padre = tk.Frame(ventana, width=250, height=250)
+
+marco_padre.config(bg="lightblue", bd=5, relief=tk.RAISED)
+marco_padre.pack(side=tk.BOTTOM, fill=tk.X, expand=tk.YES)
+
+marco = tk.Frame(marco_padre, width=250, height=250)
 
 marco.config(bg="red", bd=5, relief=tk.RAISED)
 marco.pack(side=tk.LEFT, anchor=tk.SW)
 
-marco = tk.Frame(ventana, width=250, height=250)
+marco = tk.Frame(marco_padre, width=250, height=250)
 
 marco.config(bg="green", bd=5, relief=tk.RAISED)
 marco.pack(side=tk.RIGHT, anchor=tk.SE)
 
+marco_padre = tk.Frame(ventana, width=250, height=250)
+
+marco_padre.config(bg="lightblue")
+marco_padre.pack(side=tk.TOP, fill=tk.X, expand=tk.YES)
+
+marco = tk.Frame(marco_padre, width=250, height=250)
+
+marco.config(bg="blue", bd=5, relief=tk.RAISED)
+marco.pack(side=tk.LEFT)
+
+marco = tk.Frame(marco_padre, width=250, height=250)
+
+marco.config(bg="orange", bd=5, relief=tk.RAISED)
+marco.pack(side=tk.RIGHT)
 
 ventana.mainloop()
