@@ -20,7 +20,7 @@ texto = tk.Label(marco, text="Primer marco")
 texto.config(
     bg="red",
     fg="white",
-    height=10,
+    height=4,
     width=10,
     font=("Arial", 20),
     anchor=tk.CENTER,
