@@ -16,7 +16,7 @@ marco.config(bg="red", bd=5, relief=tk.RAISED)
 marco.pack(side=tk.LEFT, anchor=tk.SW)
 marco.pack_propagate(False)
 
-tk.Label(marco, text="Primer marco").pack(side=tk.LEFT, anchor=tk.CENTER)
+tk.Label(marco, text="Primer marco").pack(side=tk.BOTTOM, anchor=tk.CENTER)
 
 marco = tk.Frame(marco_padre, width=250, height=250)
 
