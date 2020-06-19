@@ -8,7 +8,7 @@ ventana.geometry("700x400")
 
 marco = tk.Frame(ventana, width=250, height=250)
 
-marco.config(bg="red", bd=12, relief="solid")
+marco.config(bg="red", bd=12, relief="raised")
 marco.pack()
 
 
