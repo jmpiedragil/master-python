@@ -17,6 +17,6 @@ encabezado.config(
     pady=10
 )
 
-encabezado.pack(anchor=tk.NW, side=tk.LEFT, fill=tk.X, expand=tk.YES)
+encabezado.pack(anchor=tk.NW, side=tk.LEFT)
 
 ventana.mainloop()
