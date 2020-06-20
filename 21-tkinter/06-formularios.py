@@ -9,7 +9,8 @@ ventana.title("Formularios en Tkinter | Víctor Robles")
 # Texto encabezado
 
 encabezado = tk.Label(ventana, text="Formularios con Tkinter - Víctor Robles")
-encabezado.config(fg="white", bg="darkgrey", font=("Open Sans", 18), padx=10, pady=10)
+encabezado.config(fg="white", bg="darkgrey", font=("Open Sans", 18), padx=10,
+                  pady=10)
 
 encabezado.grid(row=0, column=0, columnspan=12, sticky=tk.W)
 
@@ -33,6 +34,6 @@ label.grid(row=2, column=0, padx=5, pady=5)
 
 campo_texto = tk.Entry(ventana)
 campo_texto.grid(row=2, column=1, sticky=tk.W, padx=5, pady=5)
-campo_texto.config(justify=tk.RIGHT, state=tk.NORMAL)
+campo_texto.config(justify=tk.LEFT, state=tk.DISABLED)
 
 ventana.mainloop()
