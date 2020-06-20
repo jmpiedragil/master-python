@@ -17,6 +17,11 @@ encabezado.config(
     pady=10
 )
 
-encabezado.pack(anchor=tk.NW, side=tk.LEFT)
+encabezado.grid(row=0, column=0, sticky=tk.W)
+
+# Campo de texto
+
+campo_texto = tk.Entry(ventana)
+campo_texto.grid(row=1, column=1, padx=5, pady=5)
 
 ventana.mainloop()
