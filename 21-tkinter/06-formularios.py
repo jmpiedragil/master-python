@@ -16,7 +16,7 @@ encabezado.grid(row=0, column=0, columnspan=12, sticky=tk.W)
 # Label para el campo (Nombre)
 
 label = tk.Label(ventana, text="Nombre")
-label.grid(row=1, column=0, sticky=tk.W, padx=5, pady=5)
+label.grid(row=1, column=0, padx=5, pady=5)
 
 # Campo de texto (Nombre)
 
@@ -27,7 +27,7 @@ campo_texto.config(justify=tk.RIGHT, state=tk.NORMAL)
 # Label para el campo (Apellidos)
 
 label = tk.Label(ventana, text="Apellidos")
-label.grid(row=2, column=0, sticky=tk.W, padx=5, pady=5)
+label.grid(row=2, column=0, padx=5, pady=5)
 
 # Campo de texto (Apellidos)
 
