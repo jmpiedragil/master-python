@@ -34,6 +34,6 @@ label.grid(row=2, column=0, padx=5, pady=5)
 
 campo_texto = tk.Entry(ventana)
 campo_texto.grid(row=2, column=1, sticky=tk.W, padx=5, pady=5)
-campo_texto.config(justify=tk.LEFT, state=tk.DISABLED)
+campo_texto.config(justify=tk.LEFT, state=tk.NORMAL)
 
 ventana.mainloop()
